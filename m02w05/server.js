@@ -1,10 +1,10 @@
 const net = require("node:net");
 const PORT = 54321;
 
-const connections = []
+const connections = [];
 
 const server = net.createServer((connection) => {
-    connections.push(connection)
+  connections.push(connection);
 
   console.log("Client connected!");
   connection.write("Hello from server!");
@@ -12,10 +12,10 @@ const server = net.createServer((connection) => {
   connection.on("data", (data) => {
     console.log("client sending data:", data);
 
-    for(const conn of connections) {
-        if(conn !== connection) {
-            conn.write(data)
-        }
+    for (const conn of connections) {
+      if (conn !== connection) {
+        conn.write(data);
+      }
     }
   });
 
@@ -23,7 +23,7 @@ const server = net.createServer((connection) => {
     console.log("client disconnected");
   });
 
-  connection.setEncoding('utf-8')
+  connection.setEncoding("utf-8");
 });
 
 server.listen(PORT, () => {

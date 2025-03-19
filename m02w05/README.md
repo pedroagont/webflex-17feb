@@ -1,35 +1,22 @@
 # M02W05 - Networking with TCP and HTTP
 
 ### To Do
+
 - [ ] Discuss networking and the need for protocols
 - [ ] TCP introduction
 - [ ] TCP demo
 - [ ] HTTP fundamentals
 
 ### What is networking?
+
 - Communication between machines on a network
 
-
-(111.111.111.111)        :PORT         (222.222.222.222)
-     CLIENT        --- (request) -->      SERVER
-                   <-- (response) --        
-
 ### What is a protocol?
+
 - A defined standard for how requests and responses are sent between network devices
-Internet Protocol:
-IP
-ipv4 182.102.168.194
-ipv6 2001:aaaa:3333:4444:6666:77777
-
-PORT
-HTTP Server: 80
-HTTPS: 443
-FTP: 21
-FTPS: 22
-PostgreSQL: 5432
-
 
 ### Transport Layer Protocols
+
 - Break data into packets to be sent over the network layer
 - Give each packet a header with origin and destination
 - **UDP**: **U**ser **D**atagram **P**rotocol
@@ -46,6 +33,7 @@ PostgreSQL: 5432
   - Useful when guaranteed communication is needed
 
 ### HTTP
+
 - **H**yper**T**ext **T**ransfer **P**rotocol
 - Protocol for how messages are formatted and transmitted
 - Call and response communication
@@ -59,7 +47,7 @@ PostgreSQL: 5432
 
 ### Useful Links
 
-* [OSI Model](https://en.wikipedia.org/wiki/OSI_model)
-* [Net package documentation](https://nodejs.org/api/net.html)
-* [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
-* [Request Package](https://www.npmjs.com/package/request)
+- [OSI Model](https://en.wikipedia.org/wiki/OSI_model)
+- [Net package documentation](https://nodejs.org/api/net.html)
+- [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
+- [Request Package](https://www.npmjs.com/package/request)
