@@ -12,7 +12,7 @@
 
 (111.111.111.111)        :PORT         (222.222.222.222)
      CLIENT        --- (request) -->      SERVER
-                   <-- (response) -- 
+                   <-- (response) --        
 
 ### What is a protocol?
 - A defined standard for how requests and responses are sent between network devices
